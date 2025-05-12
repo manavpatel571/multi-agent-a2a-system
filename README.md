@@ -22,7 +22,7 @@ All agents follow the **A2A spec** by exposing a standard `/tasks/send` endpoint
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/multi-agent-a2a-system.git
+git clone https://github.com/manavpatel571/multi-agent-a2a-system.git
 cd multi-agent-a2a-system
 ```
 
