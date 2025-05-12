@@ -50,11 +50,24 @@ pip install -r requirements.txt
 Create a `.env` file in the root directory and add the following:
 
 ```env
+# OpenAI Configuration
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_MODEL=gpt-4o
+OPENAI_EMBEDDING_MODEL=text-embedding-3-small
+
+# Google Cloud APIs
+GOOGLE_API_KEY=your_google_api_key_here
+CUSTOM_SEARCH_API_KEY=your_custom_search_api_key_here
+
+# SerpAPI
+SERPAPI_API_KEY=your_serpapi_key_here
+
+# A2A Agent URLs
 TRANSLATOR_URL=http://localhost:5001/tasks/send
 MEMORY_URL=http://localhost:5002/tasks/send
 SEARCH_URL=http://localhost:5003/tasks/send
 FINAL_URL=http://localhost:5004/tasks/send
-SERPAPI_KEY=your_serpapi_key_here
+
 ```
 
 > 💡 You can get a free SerpAPI key at: [https://serpapi.com/manage-api-key](https://serpapi.com/manage-api-key)
