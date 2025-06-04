@@ -94,7 +94,7 @@ def call_with_payload(url, payload):
         resp.raise_for_status()
         data = resp.json()
         msgs = data.get("messages", [])
-        if not msgs or len(msgs) < 2:  # Need at least query and response
+        if not msgs:
             return "No valid response received"
         
         # Get the agent's response message (last message)
